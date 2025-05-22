@@ -1,0 +1,126 @@
+/* Footer Styles */
+.footer {
+  background-color: var(--color-gray-900);
+  color: var(--color-gray-300);
+  padding: var(--space-16) 0 var(--space-8);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+  margin-bottom: var(--space-10);
+}
+
+.footer-column h3 {
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-4);
+}
+
+.footer-logo {
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+}
+
+.footer-column p {
+  margin-bottom: var(--space-4);
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.social-links a {
+  color: var(--color-gray-400);
+  transition: color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.social-links a:hover {
+  color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.footer-column ul li a {
+  color: var(--color-gray-400);
+  transition: color var(--transition-fast);
+  display: inline-block;
+  padding: var(--space-1) 0;
+}
+
+.footer-column ul li a:hover {
+  color: var(--color-white);
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.subscribe-form input {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-gray-700);
+  background-color: var(--color-gray-800);
+  color: var(--color-white);
+  font-size: var(--font-size-sm);
+}
+
+.subscribe-form input:focus {
+  outline: none;
+  border-color: var(--color-primary-light);
+}
+
+.subscribe-form .btn {
+  margin-top: var(--space-1);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-gray-800);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+  }
+  
+  .subscribe-form {
+    flex-direction: row;
+  }
+  
+  .subscribe-form input {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .subscribe-form {
+    flex-direction: column;
+  }
+}
