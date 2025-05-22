@@ -1,0 +1,147 @@
+// Product data
+const products = [
+  {
+    id: 1,
+    name: "Ethiopian Yirgacheffe Coffee",
+    description: "Premium single-origin coffee with bright acidity, sweet fruit notes, and a silky body. Grown in the highlands of Yirgacheffe.",
+    price: 16.99,
+    originalPrice: 19.99,
+    category: "coffee",
+    image: "https://images.pexels.com/photos/2074122/pexels-photo-2074122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    isNew: true,
+    isFeatured: true,
+    discount: 15
+  },
+  {
+    id: 2,
+    name: "Berbere Spice Blend",
+    description: "Authentic Ethiopian spice mix featuring chili peppers, garlic, ginger, basil, and a blend of other warm spices.",
+    price: 12.50,
+    originalPrice: null,
+    category: "spices",
+    image: "https://images.pexels.com/photos/4198169/pexels-photo-4198169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    isNew: false,
+    isFeatured: true,
+    discount: 0
+  },
+  {
+    id: 3,
+    name: "Traditional Ethiopian Scarf",
+    description: "Hand-woven cotton scarf with traditional Ethiopian patterns and vibrant colors. Perfect as an elegant accessory or decorative piece.",
+    price: 34.99,
+    originalPrice: 44.99,
+    category: "textiles",
+    image: "https://images.pexels.com/photos/10346506/pexels-photo-10346506.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    isNew: false,
+    isFeatured: true,
+    discount: 20
+  },
+  {
+    id: 4,
+    name: "Ethiopian Orthodox Cross",
+    description: "Handcrafted metal cross inspired by ancient Ethiopian Orthodox designs. A beautiful piece of spiritual artistry.",
+    price: 28.99,
+    originalPrice: null,
+    category: "art",
+    image: "https://images.pexels.com/photos/267343/pexels-photo-267343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    isNew: false,
+    isFeatured: true,
+    discount: 0
+  },
+  {
+    id: 5,
+    name: "Sidamo Coffee Beans",
+    description: "Medium-roasted coffee beans from Ethiopia's Sidamo region, featuring notes of blueberry, dark chocolate, and spice.",
+    price: 15.50,
+    originalPrice: null,
+    category: "coffee",
+    image: "https://images.pexels.com/photos/942365/pexels-photo-942365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    isNew: false,
+    isFeatured: false,
+    discount: 0
+  },
+  {
+    id: 6,
+    name: "Mitmita Spice Mix",
+    description: "Hot and aromatic Ethiopian spice blend featuring bird's eye chilis, cardamom, cloves, and salt. Perfect for meat dishes.",
+    price: 11.99,
+    originalPrice: 13.99,
+    category: "spices",
+    image: "https://images.pexels.com/photos/4194845/pexels-photo-4194845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    isNew: true,
+    isFeatured: false,
+    discount: 10
+  },
+  {
+    id: 7,
+    name: "Ethiopian Table Runner",
+    description: "Colorful hand-woven table runner made with traditional Ethiopian weaving techniques. Adds vibrant color to any dining table.",
+    price: 42.99,
+    originalPrice: null,
+    category: "textiles",
+    image: "https://images.pexels.com/photos/949547/pexels-photo-949547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    isNew: false,
+    isFeatured: false,
+    discount: 0
+  },
+  {
+    id: 8,
+    name: "Handpainted Habesha Basket",
+    description: "Traditional woven basket with beautiful geometric patterns. Used for storing bread or as a decorative piece.",
+    price: 38.50,
+    originalPrice: 45.00,
+    category: "art",
+    image: "https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    isNew: false,
+    isFeatured: false,
+    discount: 15
+  },
+  {
+    id: 9,
+    name: "Ethiopian Honey",
+    description: "Pure, organic honey from the highlands of Ethiopia. Known for its distinctive floral notes and medicinal properties.",
+    price: 22.99,
+    originalPrice: null,
+    category: "coffee",
+    image: "https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    isNew: true,
+    isFeatured: false,
+    discount: 0
+  },
+  {
+    id: 10,
+    name: "Korerima (Ethiopian Cardamom)",
+    description: "Whole Ethiopian cardamom pods with a distinctive, smoky flavor profile. Essential for authentic Ethiopian cuisine.",
+    price: 9.99,
+    originalPrice: 12.99,
+    category: "spices",
+    image: "https://images.pexels.com/photos/6947275/pexels-photo-6947275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    isNew: false,
+    isFeatured: false,
+    discount: 20
+  },
+  {
+    id: 11,
+    name: "Ethiopian Cotton Throw",
+    description: "Soft, hand-loomed cotton throw blanket with traditional Ethiopian border patterns. Perfect for your couch or bed.",
+    price: 59.99,
+    originalPrice: 69.99,
+    category: "textiles",
+    image: "https://images.pexels.com/photos/6267216/pexels-photo-6267216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    isNew: false,
+    isFeatured: false,
+    discount: 15
+  },
+  {
+    id: 12,
+    name: "Coptic Wall Art",
+    description: "Hand-painted canvas featuring traditional Ethiopian Coptic religious imagery. Signed by the artist.",
+    price: 85.00,
+    originalPrice: 100.00,
+    category: "art",
+    image: "https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    isNew: false,
+    isFeatured: false,
+    discount: 15
+  }
+];
