@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HabeshaMarket - Ethiopian Treasures</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header id="main-header" class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1><span class="logo-accent">Habesha</span>Market</h1>
+        </div>
+
+        <nav class="desktop-nav">
+          <button class="nav-link active" data-category="all">All Products</button>
+          <button class="nav-link" data-category="coffee">Coffee</button>
+          <button class="nav-link" data-category="spices">Spices</button>
+          <button class="nav-link" data-category="textiles">Textiles</button>
+          <button class="nav-link" data-category="art">Art & Crafts</button>
+        </nav>
+
+        <div class="header-actions">
+          <form id="search-form" class="search-form">
+            <input type="text" placeholder="Search products..." class="search-input">
+            <button type="submit" class="search-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </form>
+          <button class="cart-button" aria-label="Open cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span class="cart-count">0</span>
+          </button>
+          <button class="user-button" aria-label="User account">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </button>
+        </div>
+
+        <button class="mobile-menu-button" aria-label="Toggle mobile menu">
+          <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu hidden">
+        <form class="search-form mobile-search">
+          <input type="text" placeholder="Search products..." class="search-input">
+          <button type="submit" class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+        </form>
+        <nav class="mobile-nav">
+          <button class="nav-link active" data-category="all">All Products</button>
+          <button class="nav-link" data-category="coffee">Coffee</button>
+          <button class="nav-link" data-category="spices">Spices</button>
+          <button class="nav-link" data-category="textiles">Textiles</button>
+          <button class="nav-link" data-category="art">Art & Crafts</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  
+  <section class="hero">
+    <div class="hero-content">
+      <div class="container">
+        <div class="hero-text">
+          <h2>Authentic Ethiopian Treasures</h2>
+          <p>Discover handcrafted products from the heart of Ethiopia. From premium coffee to traditional textiles and artwork.</p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary">
+              Shop Now
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+            <button class="btn btn-secondary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>Featured Products</h2>
+          <p>Discover our handpicked selection of exceptional Ethiopian treasures.</p>
+        </div>
+        <a href="#products" class="view-all">
+          View All
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+      <div class="products-grid featured-grid" id="featured-products">
+        <!-- Featured products will be loaded here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- All Products -->
+  <section class="all-products" id="products">
+    <div class="container">
+      <h2>Our Products</h2>
+      <p class="section-description">Explore our collection of authentic Ethiopian products, carefully sourced and ethically traded.</p>
+      <div class="products-grid" id="products-grid">
+        <!-- Products will be loaded here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="https://images.pexels.com/photos/5814234/pexels-photo-5814234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Ethiopian traditional coffee ceremony">
+        </div>
+        <div class="about-text">
+          <h2>About HabeshaMarket</h2>
+          <p>HabeshaMarket is dedicated to bringing the rich cultural heritage of Ethiopia directly to your doorstep. Our mission is to support Ethiopian artisans and farmers by providing a platform to showcase their exceptional craftsmanship and products to the world.</p>
+          <p>Each product in our collection tells a story of centuries-old traditions, passed down through generations. From the aromatic coffee beans grown in the highlands of Yirgacheffe to the intricate patterns of handwoven textiles from Addis Ababa, every item represents the soul of Ethiopia.</p>
+          <p>We work directly with local cooperatives and family businesses, ensuring fair compensation and sustainable practices. By choosing HabeshaMarket, you're not just purchasing a product – you're supporting communities and preserving cultural heritage.</p>
+          <button class="btn btn-primary">Our Story</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3 class="footer-logo"><span class="logo-accent">Habesha</span>Market</h3>
+          <p>Bringing authentic Ethiopian treasures to your doorstep since 2020.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="#">Coffee</a></li>
+            <li><a href="#">Spices</a></li>
+            <li><a href="#">Textiles</a></li>
+            <li><a href="#">Art & Crafts</a></li>
+            <li><a href="#">New Arrivals</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Subscribe</h3>
+          <p>Subscribe to our newsletter for updates on new products and special offers.</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 HabeshaMarket. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <div class="cart-overlay" id="cart-overlay">
+    <div class="cart-container">
+      <div class="cart-header">
+        <h2>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          Your Cart
+        </h2>
+        <button class="close-cart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <!-- Cart items will be loaded here by JavaScript -->
+      </div>
+      <div class="cart-empty hidden" id="cart-empty">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        <p class="empty-title">Your cart is empty</p>
+        <p class="empty-subtitle">Start adding some amazing Ethiopian products!</p>
+        <button class="btn btn-primary continue-shopping">Continue Shopping</button>
+      </div>
+      <div class="cart-footer" id="cart-footer">
+        <div class="cart-subtotal">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">$0.00</span>
+        </div>
+        <p class="cart-shipping">Shipping and taxes calculated at checkout</p>
+        <button class="btn btn-primary checkout-btn">Checkout</button>
+        <button class="clear-cart-btn">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+
+
+  <button class="mobile-cart-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+    <span class="mobile-cart-count">0</span>
+  </button>
+
+ 
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
